@@ -36,7 +36,7 @@ class NgSurvey_Custom_Message_Controller extends NgSurvey_Controller {
     public function __construct( $config = array() ) {
         $config = array_merge( $config, array(
             'name'          => 'custom-message',
-            'title'         => __( 'Custom Message', NGS_IMPEXPTM ),
+            'title'         => __( 'Custom Message', 'ngsurvey-extension-custom-message' ),
             'template'      => new NgSurvey_Template_Loader(array(
                 'plugin_directory' => plugin_dir_path( dirname( __FILE__ ) ),
                 'theme_template_directory' => plugin_basename( dirname( __DIR__ ) ),
