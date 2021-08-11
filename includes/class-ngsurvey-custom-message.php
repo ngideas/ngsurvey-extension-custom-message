@@ -56,7 +56,7 @@ class NgSurvey_Custom_Message {
     	$controller = new NgSurvey_Custom_Message_Controller();
     	
     	// Add hidden menu item so that we can display the invitations page there
-    	add_action( 'ngsurvey_end_of_survey_message', array( $controller, 'show_awesome_message' ) );
+    	add_action( 'ngsurvey_end_of_survey_message', array( $controller, 'show_awesome_message' ), 10, 3 );
     }
     
     /**

@@ -54,7 +54,7 @@ class NgSurvey_Custom_Message_Controller extends NgSurvey_Controller {
      * 
      * @return string $message the updated message
      */
-    public function show_awesome_message( $message ) {
+    public function show_awesome_message( $message, $survey, $responseId ) {
     	
     	// Create our message modal class instance
     	$model = $this->get_model( 'message', 'NgSurvey_Custom_Message_Model_' );
